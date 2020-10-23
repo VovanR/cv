@@ -1,0 +1,38 @@
+@import "awsm.min.css";
+
+body > header {
+  display: grid;
+  grid-template-areas:
+    "title locale"
+    "description locale";
+  grid-template-columns: 1fr auto;
+}
+
+body > header h1 {
+  grid-area: title;
+}
+
+body > header time {
+  font-weight: normal;
+  font-size: 0.75em;
+}
+
+body > header p {
+  grid-area: description;
+}
+
+body > header select {
+  grid-area: locale;
+  font-size: .85em;
+}
+
+em {
+  opacity: 0.5;
+}
+
+pre {
+  background: none;
+  border: none;
+  padding: 0;
+  white-space: pre-wrap;
+}

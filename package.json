@@ -6,24 +6,16 @@
   "private": true,
   "repository": "VovanR/cv",
   "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
-  "engines": {
-    "node": ">=8"
-  },
   "scripts": {
+    "start": "http-server ."
   },
   "dependencies": {},
   "devDependencies": {
-    "conventional-changelog-cli": "^2.0.23",
-    "cz-conventional-changelog": "^3.0.2"
+    "http-server": "^0.12.3"
   },
   "peerDependencies": {},
   "bugs": {
     "url": "https://github.com/VovanR/cv/issues"
   },
-  "homepage": "https://github.com/VovanR/cv#readme",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  "homepage": "https://vovanr.com/cv"
 }
