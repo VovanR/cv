@@ -51,9 +51,24 @@ function Item({
 function List({
   workingExperience,
 }) {
+  const descSortedWorkingExperience = workingExperience.sort((a, b) => {
+    const aDate = new Date(a.start)
+    const bDate = new Date(b.start)
+
+    if (aDate < bDate) {
+      return 1
+    }
+
+    if (aDate > bDate) {
+      return -1
+    }
+
+    return 0
+  })
+
   return createElement('div', {
     className: 'working-experience-list',
-  }, workingExperience.map(item => {
+  }, descSortedWorkingExperience.map(item => {
     const {
       name,
       juristic,
