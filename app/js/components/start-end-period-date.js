@@ -37,7 +37,7 @@ function EndTime({
     return createElement(Time, {dateTime, locale})
   }
 
-  return getMessage(locale, 'currentTime')
+  return getMessage('currentTime')
 }
 
 function formatMonthsDuration(locale, months) {
