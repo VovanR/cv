@@ -4,7 +4,9 @@
     "faculty": "Institute of Information Technology and Management Systems",
     "specialty": "Management and computer science in technical systems",
     "specialization": "Information Technologies in Business, Economics and Management",
+    "degree": "Engineer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2006-09",
     "end": "2011-05",
     "type": "higher_education"

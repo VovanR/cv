@@ -4,6 +4,7 @@
     "juristic": "Port Professional Communication Design LLC",
     "position": "Programmer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2011-09",
     "end": "2012-12"
   },
@@ -12,13 +13,16 @@
     "juristic": "FS group LLC",
     "position": "Web developer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2012-12",
     "end": "2013-06"
   },
   {
     "name": "Data Link Systems",
+    "juristic": "Data Link Systems LLC",
     "position": "Programmer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2013-06",
     "end": "2015-08"
   },
@@ -27,6 +31,7 @@
     "juristic": "Soft Draiver LLC",
     "position": "Software engineer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2015-09",
     "end": "2015-11"
   },
@@ -35,6 +40,7 @@
     "juristic": "TDSZ LLC",
     "position": "Web developer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2015-11",
     "end": "2016-12"
   },
@@ -43,6 +49,7 @@
     "juristic": "Eksperttaun LLC",
     "position": "Senior programmer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2016-12",
     "end": "2017-04"
   },
@@ -51,6 +58,7 @@
     "juristic": "Timecode LLC",
     "position": "Software developer",
     "city": "Saint-Petersburg",
+    "country": "Russia",
     "start": "2017-04",
     "end": null
   }
