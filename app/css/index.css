@@ -1,10 +1,10 @@
-@import "awsm.min.css";
+@import 'awsm.min.css';
 
 body > header {
   display: grid;
   grid-template-areas:
-    "title locale"
-    "description locale";
+    'title locale'
+    'description locale';
   grid-template-columns: 1fr auto;
 }
 
@@ -23,7 +23,7 @@ body > header p {
 
 body > header select {
   grid-area: locale;
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 em {

@@ -1,6 +1,4 @@
-const {
-  createContext,
-} = React
+const {createContext} = React
 
 const LocaleContext = createContext({
   locale: '',

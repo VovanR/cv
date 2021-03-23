@@ -36,5 +36,4 @@ function classNamesObject(object) {
   return classNames.join(' ')
 }
 
-
 export default classNames

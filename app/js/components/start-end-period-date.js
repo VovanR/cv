@@ -1,8 +1,5 @@
 /* global React */
-const {
-  createElement,
-  useContext,
-} = React
+const {createElement, useContext} = React
 import LocaleContext from '../locale-context.js'
 
 /**
@@ -18,20 +15,12 @@ function formatDate(locale, date) {
   }).format(new Date(date))
 }
 
-function Time({
-  dateTime,
-  locale,
-}) {
+function Time({dateTime, locale}) {
   return createElement('time', {dateTime}, formatDate(locale, dateTime))
 }
 
-function EndTime({
-  dateTime,
-  locale,
-}) {
-  const {
-    getMessage,
-  } = useContext(LocaleContext)
+function EndTime({dateTime, locale}) {
+  const {getMessage} = useContext(LocaleContext)
 
   if (dateTime) {
     return createElement(Time, {dateTime, locale})
@@ -56,11 +45,7 @@ function formatYearsDuration(locale, years) {
   }).format(years)
 }
 
-function Period({
-  start,
-  end,
-  locale,
-}) {
+function Period({start, end, locale}) {
   const startDate = new Date(start)
   const endDate = end ? new Date(end) : Date.now()
 
@@ -77,15 +62,12 @@ function Period({
   return `(${years ? `${formatYearsDuration(locale, years)} ` : ''}${formatMonthsDuration(locale, relMonths)})`
 }
 
-function StartEndPeriodDate({
-  start,
-  end,
-}) {
-  const {
-    locale,
-  } = useContext(LocaleContext)
+function StartEndPeriodDate({start, end}) {
+  const {locale} = useContext(LocaleContext)
 
-  return createElement('span', {},
+  return createElement(
+    'span',
+    {},
     Time({
       dateTime: start,
       locale,

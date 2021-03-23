@@ -1,21 +1,10 @@
 /* global React, ReactDOM */
 
-import {
-  DATA_DIR,
-  DATA_FILE_NAMES,
-  REPOSITORY_URL,
-  SITE_SOURCE_URL,
-} from './constants.js'
+import {DATA_DIR, DATA_FILE_NAMES, REPOSITORY_URL, SITE_SOURCE_URL} from './constants.js'
 import getCurrentLocale from './utils/get-current-locale.js'
 import {LOCALES} from './constants.js'
 
-const {
-  Fragment,
-  createElement,
-  useCallback,
-  useEffect,
-  useState,
-} = React
+const {Fragment, createElement, useCallback, useEffect, useState} = React
 import LocaleContext from './locale-context.js'
 import PageHeader from './page-header.js'
 import PageFooter from './page-footer.js'
@@ -23,8 +12,7 @@ import Education from './education.js'
 import WorkingExperience from './working-experience.js'
 
 function fetchData(locale, dataFileName) {
-  return fetch(`${DATA_DIR}/${locale}/${dataFileName}.json`)
-    .then(response => response.json())
+  return fetch(`${DATA_DIR}/${locale}/${dataFileName}.json`).then(response => response.json())
 }
 
 function DataContainer() {
@@ -64,17 +52,25 @@ function DataContainer() {
     return 'Loading'
   }
 
-  return createElement(LocaleContext.Provider, {value: {
-    locale,
-    locales: LOCALES,
-    getMessage: id => messages[id],
-    changeLocale,
-  }},
-    createElement(Fragment, {},
+  return createElement(
+    LocaleContext.Provider,
+    {
+      value: {
+        locale,
+        locales: LOCALES,
+        getMessage: id => messages[id],
+        changeLocale,
+      },
+    },
+    createElement(
+      Fragment,
+      {},
       createElement(PageHeader, {
         bio,
       }),
-      createElement('main', {},
+      createElement(
+        'main',
+        {},
         createElement(WorkingExperience, {
           workingExperience,
         }),

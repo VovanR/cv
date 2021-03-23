@@ -1,8 +1,4 @@
-const {
-  Fragment,
-  createElement,
-  useContext,
-} = React
+const {Fragment, createElement, useContext} = React
 import LocaleContext from './locale-context.js'
 import LocaleSelector from './locale-selector.js'
 import calculateCurrentYears from './utils/calculate-current-years.js'
@@ -14,16 +10,15 @@ function formatCurrentYears(locale, date) {
   return formatter.format(years)
 }
 
-function PageHeader({
-  bio,
-}) {
-  const {
-    locale,
-    getMessage,
-  } = useContext(LocaleContext)
+function PageHeader({bio}) {
+  const {locale, getMessage} = useContext(LocaleContext)
 
-  return createElement('header', {},
-    createElement('h1', {},
+  return createElement(
+    'header',
+    {},
+    createElement(
+      'h1',
+      {},
       createElement('span', {}, bio.fullname),
       createElement(Fragment, {}, ' '),
       createElement('time', {dateTime: bio.birthday}, formatCurrentYears(locale, bio.birthday))

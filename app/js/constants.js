@@ -20,10 +20,4 @@ const LOCALES = [
 const REPOSITORY_URL = 'https://github.com/VovanR/cv'
 const SITE_SOURCE_URL = `${REPOSITORY_URL}/blob/master/`
 
-export {
-  DATA_DIR,
-  DATA_FILE_NAMES,
-  LOCALES,
-  REPOSITORY_URL,
-  SITE_SOURCE_URL,
-}
+export {DATA_DIR, DATA_FILE_NAMES, LOCALES, REPOSITORY_URL, SITE_SOURCE_URL}
